@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,500">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400">
+	<link rel="stylesheet" href="css/start.css">
+</head>
+<body>
+	
+<audio autoplay="">
+	<source src="audio/mortal-kombat.mp3" type="audio/mpeg">	
+</audio>
+<section id="container">
+	<div class="background"></div>
+	<h1><strong>Mortal Kombat</strong></h1>
+	<button id="retry" onclick="begin()">Play</button>
+</section>
+
+
+
+
+
+<audio id="myAudios" >
+  <source src="audio/hammer-2.mp3" type="audio/mpeg">
+</audio>
+
+<!-- <audio > -->
+  <source  id="sa" autoplay src="audio/mortal-kombat.mp3" type="audio/mpeg">
+<!-- </audio> -->
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+
+<script>
+	// $(document).ready(function(){
+	// 	$('#kk').get(0).play()
+	// })
+	// var s = document.getElementById('kk')
+	// s.play()
+
+	$('#container').imagesLoaded( { background: true }, function(instance) {
+	$('#container').addClass('loaded');
+});
+$('#retry').on('click', function() {
+	$('#container').toggleClass('loaded');
+});
+
+
+function begin(){
+	  var start = document.getElementById('myAudios')
+	start.play()
+
+	setTimeout(function() {
+    window.location.assign('index.html');
+}, 3000);
+}
+
+
+
+
+
+
+</script>
+

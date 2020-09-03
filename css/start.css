@@ -1,0 +1,108 @@
+*{
+  padding: 0px;
+  margin: 0 auto;
+}
+#container {
+  position: relative;
+  height: 100vh;
+  background-color: #202020;
+  color: #f0f0f0;
+  text-align: center;
+  overflow: hidden;
+}
+#container.loaded * {
+  opacity: 1;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  letter-spacing: 0.2em;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+#container.loaded .background {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('../img/mortal_kombat_drakon_fon_yazyk_krug_21211_1280x1024.jpg');
+  transition: all 6s;
+  opacity: 0;
+  -webkit-filter: blur(32px) contrast(120%) saturate(100%);
+          filter: blur(32px) contrast(120%) saturate(100%);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+h1 {
+  font: 100 4rem/1em raleway, arial, sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 50;
+  top: 50%;
+  margin-top: -0.5em;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  letter-spacing: 0.15em;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  transition: all 6s;
+  -webkit-filter: blur(5.33333333px);
+          filter: blur(5.33333333px);
+}
+h1 strong {
+  font-weight: 300;
+  letter-spacing: inherit;
+  transition: all 6s;
+}
+h2 {
+  padding-top: 1em;
+  position: relative;
+  z-index: 5;
+  font: 100 1.5rem/1em raleway, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding-bottom: 0.3em;
+}
+h2 strong {
+  font-weight: 300;
+  letter-spacing: inherit;
+  transition: all 6s;
+}
+button {
+  margin: 0;
+  padding: 0.6em 1.2em;
+  letter-spacing: 0.1em !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: raleway;
+  background: transparent;
+  border: 1px solid;
+  color: inherit;
+  border-radius: 3rem;
+  font-size: 0.9em;
+  position: absolute;
+  bottom: 20%;
+  margin: 0 auto;
+  display: inline-block;
+  -webkit-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
+  transition: all 0.3s;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  cursor: pointer;
+}
+button:hover {
+  color: black;
+  background-color: white;
+  border-color: white;
+}
+body {
+  font: 300 18px/1.65em poppins, open sans, arial, sans-serif;
+  letter-spacing: 0.02em;
+  color: #484848;
+}
